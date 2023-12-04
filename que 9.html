@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .gallery img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .scrolling-text {
+      padding: 10px;
+      background-color: #fff;
+      overflow: hidden;
+    }
+
+    marquee {
+      font-size: 18px;
+      color: #333;
+    }
+    img{
+        height: 20vw;
+        width: 20vw;
+    }
+  </style>
+  <title>Image Gallery with Scrolling Text</title>
+</head>
+<body>
+
+  <header>
+    <h1>Image Gallery</h1>
+  </header>
+
+  <div class="gallery">
+    <marquee behavior="scroll" direction="right" scrollamount="7">
+    <img src="neom-0rCJ-y3wx6g-unsplash.jpg" alt="Image 1">
+    <img src="neom-llB7NfKnS8A-unsplash.jpg" alt="Image 2">
+    <img src="neom-vrbQpGoN8fw-unsplash.jpg" alt="Image 3">
+    <img src="peter-broomfield-m3m-lnR90uM-unsplash.jpg" alt="Image 4">
+    <img src="joey-banks-YApiWyp0lqo-unsplash.jpg" alt="Image 5">
+    <img src="joshua-reddekopp-SyYmXSDnJ54-unsplash.jpg" alt="Image 6">
+    <!-- Add more images as needed -->
+    </marquee>
+  </div>
+
+  <div class="scrolling-text">
+    <marquee behavior="scroll" direction="left" scrollamount="4">
+      Welcome to our image gallery! Enjoy the beautiful pictures.
+    </marquee>
+  </div>
+
+</body>
+</html>
